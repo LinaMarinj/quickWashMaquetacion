@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/two-up-element@1.0.1/dist/two-up.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Quick Wash</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="img/logo (1).png" alt="" />
+        <ul>
+          <a href="#seccionNumeroDos"> <li>¿Quienes somos?</li></a>
+          <a href="#tres"><li>Nuestros servicios</li></a>
+          <a href="#historico"> <li>Fidelización</li></a>
+          <a href="#seccionNumeroCinco"> <li>Contáctanos</li></a>
+          <a href="#"><button>¿Eres Administrador?</button></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="seccionNumeroUno">
+        <div><h1>QUICK WASH</h1></div>
+      </section>
+
+      <section id="seccionNumeroDos">
+        <div>
+          <h3>¿Quienes somos?</h3>
+
+          <p>
+            Somos un equipo dedicado a ofrecerte un servicio rápido y eficiente
+            para que tu vehículo siempre luzca impecable. Con nuestra
+            experiencia y atención al detalle, garantizamos que tu auto reciba
+            el mejor cuidado y protección. En cada visita, dejamos tu carro como
+            nuevo, asegurando una apariencia brillante y duradera.
+          </p>
+        </div>
+
+        <div>
+          <article>
+            <two-up class="my-two-up">
+              <div>
+                <img class="fotocarro" src="img/rojoSucio.webp" alt="" />
+              </div>
+              <div>
+                <img class="fotocarro" src="img/rojoLimpio1.webp" alt="" />
+              </div>
+            </two-up>
+          </article>
+        </div>
+      </section>
+
+      <div id="tres" class="fondoSeccionTres">
+        <h2 class="text-4xl text-white font-medium">Nuestros Servicios</h2>
+        <br />
+        <br />
+        <div
+          class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+        >
+          <div
+            class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+          >
+            <a href="#" class="group">
+              <img
+                src="img/externo.webp"
+                alt=""
+                class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8"
+              />
+              <h3 class="mt-4 text-lg font-medium text-white">
+                Lavado externo
+              </h3>
+              <p class="mt-1 text-lg text-white">$60.000</p>
+            </a>
+            <a href="#" class="group">
+              <img
+                src="img/interno.webp"
+                alt=""
+                class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8"
+              />
+              <h3 class="mt-4 text-lg font-medium text-white">
+                Lavado interno
+              </h3>
+              <p class="mt-1 text-lg text-white">$70.000</p>
+            </a>
+            <a href="#" class="group">
+              <img
+                src="img/brillar.webp"
+                alt=""
+                class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8"
+              />
+              <h3 class="mt-4 text-lg font-medium text-white">Brillado</h3>
+              <p class="mt-1 text-lg text-white">$150.000</p>
+            </a>
+            <a href="#" class="group">
+              <img
+                src="img/polichar.webp"
+                alt=""
+                class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8"
+              />
+              <h3 class="mt-4 text-lg font-medium text-white">Polichado</h3>
+              <p class="mt-1 text-lg text-white">$160.000</p>
+            </a>
+
+            <!-- More products... -->
+          </div>
+        </div>
+      </div>
+
+      <section id="historico">
+        <div>
+          <img src="img/car.png" />
+          <section class="container">
+            <div>
+              <h1 id="titulo">¡TU RECOMPENSA ESTÁ CERCA!</h1>
+              <p>
+                Consulta y descubre cuántas visitas te faltan para tu recompensa
+              </p>
+
+              <form id="form">
+                <label for="placa">* Placa</label>
+                <input type="text" id="placa" placeholder="KPS123" required />
+                <button type="button" id="btn">Consultar</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <table class="hidden">
+            <thead>
+              <tr>
+                <th>Placa</th>
+                <th>Servicio realizado</th>
+                <th>Fecha</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>KPS123</td>
+                <td>Lavado sencillo</td>
+                <td>2021-08-01</td>
+              </tr>
+              <tr>
+                <td>KPS123</td>
+                <td>Lavado y encerado</td>
+                <td>2021-08-15</td>
+              </tr>
+              <tr>
+                <td>KPS123</td>
+                <td>Lavado sencillo</td>
+                <td>2021-08-30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <section id="seccionNumeroCinco">
+      <div>
+        <h2 class="text-4xl text-white font-medium">Contáctanos</h2>
+      </div>
+    </section>
+
+    <footer>
+      <img src="img/logo (1).png" alt="" />
+      <p>
+        © Todos los derechos reservados <br />
+        <br />
+        quickwashmedellin@gmail.com
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script type="application/javascript">
+      const form = document.getElementById("form");
+      const btn = document.getElementById("btn");
+      const placa = document.getElementById("placa");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+
+      btn.addEventListener("click", () => {
+        if (placa.value !== "") {
+          const table = document.querySelector("table");
+          table.classList.remove("hidden");
+        } else {
+          alert("Por favor, ingrese la placa");
+        }
+      });
+    </script>
+  </body>
+</html>

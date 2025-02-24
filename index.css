@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 5px;
+}
+
+nav img {
+  max-height: 75px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+}
+
+nav ul li {
+  margin-right: 30px;
+  list-style: none;
+}
+
+nav button {
+  background-color: #e81c2e;
+  color: white;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  position: relative;
+}
+
+#seccionNumeroUno {
+  background-image: url("img/fondoUno.webp");
+  background-position: 0 75%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed; /*mantiene la img fija*/
+  position: relative;
+  top: -85px;
+  height: 100vh;
+}
+
+#seccionNumeroUno h1 {
+  color: rgba(250, 247, 247, 0.877);
+  font-family: inherit;
+  font-size: 4rem;
+  padding: 30px;
+}
+
+#seccionNumeroDos {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#seccionNumeroDos h3 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+#seccionNumeroDos p {
+  max-width: 500px;
+  min-width: 300px;
+  text-align: justify;
+}
+
+#tituloquienes {
+  font-size: 2rem;
+}
+
+.fotocarro {
+  max-width: 800px;
+  margin-left: 20px;
+}
+
+.fondoSeccionTres {
+  background-image: url(img/carbon_BG-20.png);
+  background-color: #19191b;
+  padding: 60px;
+  margin-top: 100px;
+}
+
+#historico:before {
+  padding-top: 280px !important;
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 50px;
+  display: block;
+  z-index: 0;
+}
+
+#historico {
+  position: relative;
+  width: 100%;
+  background-color: #19191b;
+  background-image: url("img/carbon_BG-20.png");
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+
+#historico img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: auto;
+}
+
+.container {
+  max-width: 1200px;
+  display: block;
+  margin: auto;
+}
+
+#historico #titulo {
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 6px;
+  color: #e81c2e;
+}
+
+#historico p {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+#historico form {
+  background-color: #19191b;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 100px 9fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+#historico form label {
+  display: block;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+#historico form input {
+  padding: 1rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+#historico form button {
+  background-color: #e81c2e;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+main table {
+  background: white;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 7px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+main table thead tr th,
+main table tbody tr td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 2px dotted #ccc;
+}
+
+#seccionNumeroCinco {
+  background-image: url("img/fondoUno.webp");
+  background-position: 0 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed; /*mantiene la img fija*/
+  position: relative;
+  height: 80vh;
+}
+
+#seccionNumeroCinco h3 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: white;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.911);
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+footer img {
+  height: 50px;
+  width: auto;
+  margin-right: 40px;
+}
