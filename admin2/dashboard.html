@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../sweetalert2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <link
+      rel="shortcut icon"
+      href="../img/billeteNegro.png"
+      type="image/x-icon"
+    />
+
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navBar">
+        <img id="logo" src="../img/logo (1).png" alt="Logo Quick Wash" />
+        <div>
+          <ul>
+            <li><a href="#tablaServicios">Servicios</a></li>
+            <li><a href="#tablaRecompensas">Recompensas</a></li>
+            <li><a href="../index.html" id="">Salir</a></li>
+          </ul>
+          <img id="avatarUno" src="../img/user.webp" alt="foto personal" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <section id="encabezado">  
+        <h1>Administración de Servicios Quick Wash</h1>
+      </section>
+
+      <section class="grid grid-cols-4 grid-rows-3 gap-4">
+        <div id="parteUno" class="row-span-5">
+          <ul>
+            <h2>Panel de Coltrol</h2>
+            <li><img src="../img/todoterreno.svg" alt="">Ingresar Vehículo</li>
+            <li><img src="../img/insignias-de-recompensa.svg" alt=""> Sitema de Recompensas</li>
+            <li><img src="../img/servicio.svg" alt=""> Servicios</li>
+            <li><img src="../img/salir.png" alt="">Salir</li>
+          </ul>
+        </div>
+
+        <div id="parteDos">
+          <h3>Vehículos Ingresados</h3>
+          <p style="text-align: center; font-size: 3rem; margin: 5px;">0</p>
+          <p>En total</p>
+        </div>
+        <div id="parteTres" >
+          <h3>Premios Reclamados</h3>
+
+        </div>
+        <div id="parteCuatro" >
+          <h3>Premios por Entregar</h3>
+        </div>
+        <div id="parteCinco"class="row-span-3 col-start-2 row-start-2">
+          <section>
+            <div
+              class="max-w-sm w-full bg-white rounded-lg shadow-sm dark:bg-gray-800 p-4 md:p-6"
+            >
+              <!-- Donut Chart -->
+              <div class="py-6" id="donut-chart"></div>
+            </div>
+          </section>
+          
+        </div>
+        <div id="parteSeis" class="row-span-2 col-start-3 row-start-2">6</div>
+        <div id="parteSiete" class="row-span-2 col-start-4 row-start-2">7</div>
+      </seccion>
+
+    </main>
+
+    <script src="../admin2/dashboard.js"></script>
+    <script src="../admin2/grafica.js"></script>
+  </body>
+</html>
